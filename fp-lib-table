@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name XC6421AB03ER-G)(type KiCad)(uri ${KIPRJMOD}/XC6421AB03ER-G/XC6421AB03ER-G.pretty)(options "")(descr ""))
+  (lib (name F1C100s)(type KiCad)(uri ${KIPRJMOD}/f1c100s/F1C100s.pretty)(options "")(descr ""))
+  (lib (name 105162-0001)(type KiCad)(uri ${KIPRJMOD}/105162-0001/105162-0001.pretty)(options "")(descr ""))
+  (lib (name button)(type KiCad)(uri ${KIPRJMOD}/button/button.pretty)(options "")(descr ""))
+  (lib (name 10118194-0011LF)(type KiCad)(uri ${KIPRJMOD}/10118194-0011LF/10118194-0011LF.pretty)(options "")(descr ""))
+)

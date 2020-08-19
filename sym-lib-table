@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name torex_XC6421AB03ER-G)(type Legacy)(uri ${KIPRJMOD}/torex_XC6421AB03ER-G.lib)(options "")(descr ""))
+  (lib (name XC6421AB03ER-G)(type Legacy)(uri ${KIPRJMOD}/XC6421AB03ER-G/XC6421AB03ER-G.lib)(options "")(descr ""))
+  (lib (name f1c100s)(type Legacy)(uri ${KIPRJMOD}/f1c100s/f1c100s.lib)(options "")(descr ""))
+  (lib (name f1c200s-rescue)(type Legacy)(uri ${KIPRJMOD}/f1c200s-rescue.lib)(options "")(descr ""))
+)
