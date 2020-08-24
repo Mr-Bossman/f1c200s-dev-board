@@ -461,24 +461,6 @@ X DET 9 1300 -100 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# f1c200s-rescue_AP2127N-3.3-Regulator_Linear
-#
-DEF f1c200s-rescue_AP2127N-3.3-Regulator_Linear U 0 10 Y Y 1 F N
-F0 "U" -150 125 50 H V C CNN
-F1 "f1c200s-rescue_AP2127N-3.3-Regulator_Linear" 0 125 50 H V L CNN
-F2 "Package_TO_SOT_SMD:SOT-23" 0 225 50 H I C CIN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- SOT?23*
-$ENDFPLIST
-DRAW
-S -200 75 200 -200 0 1 10 f
-X GND 1 0 -300 100 U 50 50 1 1 W
-X VO 2 300 0 100 L 50 50 1 1 w
-X VI 3 -300 0 100 R 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
 # f1c200s-rescue_AT25xxx-Memory_EEPROM
 #
 DEF f1c200s-rescue_AT25xxx-Memory_EEPROM U 0 20 Y Y 1 F N
@@ -750,6 +732,22 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
+# power_+3.3V
+#
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
 # power_GND
 #
 DEF power_GND #PWR 0 0 Y Y 1 F P
@@ -760,6 +758,24 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# sot_23_3.3_common_3.3v
+#
+DEF sot_23_3.3_common_3.3v U 0 40 Y Y 1 F N
+F0 "U" -50 -50 50 H V C CNN
+F1 "sot_23_3.3_common_3.3v" 250 -50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 900 300 -200 50 0 0 0 3.3V Normal 0 C C
+T 0 150 -350 50 0 0 0 GND Normal 0 C C
+T 900 0 -200 50 0 0 0 VCC Normal 0 C C
+S -50 -100 350 -400 0 1 0 N
+X ~ 1 450 -200 100 L 50 50 1 1 W
+X ~ 2 -150 -200 100 R 50 50 1 1 W
+X ~ 3 150 -500 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #

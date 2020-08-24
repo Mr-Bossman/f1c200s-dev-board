@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:f1c200s-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -235,8 +236,6 @@ Text Label 7250 4200 2    50   ~ 0
 L
 Text Label 7250 4100 2    50   ~ 0
 R
-Text Label 7250 4400 2    50   ~ 0
-COM
 $Comp
 L power:GND #PWR0101
 U 1 1 5F0BEAC5
@@ -753,28 +752,156 @@ Wire Wire Line
 	7000 3700 7650 3700
 Wire Wire Line
 	7650 3700 7650 3650
-Wire Wire Line
-	7150 3900 6850 3900
-Wire Wire Line
-	7150 3750 7150 3900
-Wire Wire Line
-	6850 4000 7650 4000
-Wire Wire Line
-	7650 4000 7650 3750
-Wire Wire Line
-	7250 4400 6850 4400
 Connection ~ 6850 4400
 $Comp
-L Connector:Conn_01x03_Male J5
-U 1 1 5F77A1B9
-P 7450 4200
-F 0 "J5" H 7422 4132 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 7422 4223 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7450 4200 50  0001 C CNN
-F 3 "~" H 7450 4200 50  0001 C CNN
-	1    7450 4200
-	-1   0    0    1   
+L Device:R R11
+U 1 1 5F45AC07
+P 9050 4250
+F 0 "R11" H 9120 4296 50  0000 L CNN
+F 1 "220k" H 9120 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8980 4250 50  0001 C CNN
+F 3 "~" H 9050 4250 50  0001 C CNN
+	1    9050 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C20
+U 1 1 5F45AC0E
+P 9200 4400
+F 0 "C20" H 9315 4446 50  0000 L CNN
+F 1 ".1u" H 9315 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9238 4250 50  0001 C CNN
+F 3 "~" H 9200 4400 50  0001 C CNN
+	1    9200 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C21
+U 1 1 5F45AC1C
+P 9650 4400
+F 0 "C21" H 9765 4446 50  0000 L CNN
+F 1 ".1u" H 9765 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9688 4250 50  0001 C CNN
+F 3 "~" H 9650 4400 50  0001 C CNN
+	1    9650 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5F45AC23
+P 9500 4550
+F 0 "R12" H 9570 4596 50  0000 L CNN
+F 1 "220k" H 9570 4505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9430 4550 50  0001 C CNN
+F 3 "~" H 9500 4550 50  0001 C CNN
+	1    9500 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 5F45AC2A
+P 9950 4400
+F 0 "C22" H 10065 4446 50  0000 L CNN
+F 1 ".1u" H 10065 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9988 4250 50  0001 C CNN
+F 3 "~" H 9950 4400 50  0001 C CNN
+	1    9950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0170
+U 1 1 5F45AC31
+P 8900 4250
+F 0 "#PWR0170" H 8900 4000 50  0001 C CNN
+F 1 "GND" H 8905 4077 50  0000 C CNN
+F 2 "" H 8900 4250 50  0001 C CNN
+F 3 "" H 8900 4250 50  0001 C CNN
+	1    8900 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0171
+U 1 1 5F45AC37
+P 9350 4550
+F 0 "#PWR0171" H 9350 4300 50  0001 C CNN
+F 1 "GND" H 9355 4377 50  0000 C CNN
+F 2 "" H 9350 4550 50  0001 C CNN
+F 3 "" H 9350 4550 50  0001 C CNN
+	1    9350 4550
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7250 4400 7250 4300
+	9650 4250 9650 4100
+Wire Wire Line
+	9950 4250 9950 4100
+$Comp
+L power:GND #PWR0172
+U 1 1 5F45AC40
+P 10250 4550
+F 0 "#PWR0172" H 10250 4300 50  0001 C CNN
+F 1 "GND" H 10255 4377 50  0000 C CNN
+F 2 "" H 10250 4550 50  0001 C CNN
+F 3 "" H 10250 4550 50  0001 C CNN
+	1    10250 4550
+	1    0    0    -1  
+$EndComp
+Text Label 9950 4100 3    50   ~ 0
+L
+Text Label 9650 4100 3    50   ~ 0
+R
+Text Label 7250 4400 2    50   ~ 0
+COM
+Wire Wire Line
+	6850 4400 7650 4400
+Wire Wire Line
+	7650 3750 7650 4400
+$Comp
+L Device:R R13
+U 1 1 5F45AC15
+P 10100 4550
+F 0 "R13" H 10170 4596 50  0000 L CNN
+F 1 "220k" H 10170 4505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10030 4550 50  0001 C CNN
+F 3 "~" H 10100 4550 50  0001 C CNN
+	1    10100 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 4000 7150 4000
+Wire Wire Line
+	7150 3750 7150 4000
+Wire Wire Line
+	6850 3900 7050 3900
+Text Label 7050 3900 2    50   ~ 0
+MIC
+Wire Wire Line
+	9200 4250 9200 4000
+Connection ~ 9200 4250
+Text Label 9200 4000 3    50   ~ 0
+MIC
+$Comp
+L Connector:Conn_01x03_Male J5
+U 1 1 5F491BF7
+P 9600 5000
+F 0 "J5" V 9753 4813 50  0000 R CNN
+F 1 "Conn_01x03_Male" V 9662 4813 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9600 5000 50  0001 C CNN
+F 3 "~" H 9600 5000 50  0001 C CNN
+	1    9600 5000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9600 4800 9650 4800
+Wire Wire Line
+	9650 4800 9650 4550
+Connection ~ 9650 4550
+Wire Wire Line
+	9700 4800 9950 4800
+Wire Wire Line
+	9950 4800 9950 4550
+Connection ~ 9950 4550
+Wire Wire Line
+	9500 4800 9200 4800
+Wire Wire Line
+	9200 4800 9200 4550
 $EndSCHEMATC
